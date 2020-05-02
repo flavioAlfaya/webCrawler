@@ -10,8 +10,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
 //rotas
-var produto = require('./routes/produto');
-app.use('/produto', produto);
+var produto = require('./routes/produtos');
+app.use('/produtos', produto);
 
 
 app.listen(PORT || 3000, console.log(`Server listen on port ${PORT}`));
