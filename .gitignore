@@ -1,0 +1,12 @@
+# Diretorio de dependencias
+node_modules/
+
+# variaveis de ambiente
+.env
+
+# versionamento de instalação do NPM
+package-lock.json
+
+# Pasta de configurações da do editor de código
+.vscode/
+
