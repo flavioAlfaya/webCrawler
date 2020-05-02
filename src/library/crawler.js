@@ -7,14 +7,11 @@ const perPage = 50;
 const getItens =  async(search,limit) => {
     let lista = []
     let produtos = await requisicao(search,limit,0)
-    console.log('produtos',produtos.length)
     if(!produtos.messsage){
         produtos.map(function(produto){
             lista.push(produto)
         })
-        console.log('limit',limit)
-        console.log('lista',lista.length)
-        if(lista.length>0 ){
+        if(lista.length>0){
             let temProduto = true;
             let contador = 1
             do{
@@ -41,8 +38,8 @@ const getItens =  async(search,limit) => {
 
 const requisicao = async(search,limit,next) =>{
     return new Promise((resolve, reject) => {
-        let urlFinal = URL+search+(next>0?"_Desde_"+next:'')
-        console.log("Crawling produtos... na url "+urlFinal)
+        let urlFinal = URL+search+(next>0?"_Desde_" + next:'')
+        console.log("Crawling produtos... na url " + urlFinal)
         fetch(urlFinal)
         .then(res => res.text())
         .then(async html => {
@@ -95,6 +92,7 @@ const captura = (html,limit)=>{
         console.log(error)
     }
 }
+
 const formatState = (state)=>{
     state = state.find('.item__condition').text().trim()
     if(state === undefined || state == null || state == ''){
@@ -111,4 +109,5 @@ const formatState = (state)=>{
         }
     }
 }
+
 module.exports = getItens
