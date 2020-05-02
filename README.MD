@@ -28,7 +28,7 @@ Renomeie o arquivo **.env.exemple** para apenas **.env**
 ## Rodar o backEnd
 
 Basta  rodar:
-> node srs/index.js
+> npm start
 
 
 ## Requisição ao BackEnd
