@@ -16,6 +16,15 @@ WebCrawler feito em **Node.js**  para capturar dados do Mercado Livre.
 Basta Rodar:
 > npm install
 
+## Configurar as variaveis de ambiente
+
+Renomeie o arquivo **.env.exemple** para apenas **.env**
+
+|variavel de ambiente| valor |
+|--|--|
+| PORT | porta para a conexão com o backend  |
+| URL| Url da consulta na integra (http://lista.mercadolivre.com.br/)  |
+
 ## Rodar o backEnd
 
 Basta  rodar:
