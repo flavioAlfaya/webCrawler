@@ -5,7 +5,8 @@ WebCrawler feito em **Node.js**  para capturar dados do Mercado Livre.
 
 ## Pacotes usados
 
- - [Node.js](https://nodejs.org/en/)
+ - [Node.js](https://nodejs.org/en/) 
+ - [Docker-cli](https://docs.docker.com/)
  - [Express.js](https://expressjs.com/)
  - [Cheerio.js](https://www.npmjs.com/package/cheerio)
  - [Dotenv](https://www.npmjs.com/package/dotenv)
@@ -13,7 +14,9 @@ WebCrawler feito em **Node.js**  para capturar dados do Mercado Livre.
 
 ## Instalação
 
-Basta Rodar:
+Ter Docker-cli e Nodejs instalado na maquina 
+
+Rodar:
 > npm install
 
 ## Configurar as variaveis de ambiente
@@ -23,7 +26,7 @@ As variaveis se encontram do docker-compose na área de **environment**
 ## Rodar o backEnd
 
 Basta  rodar:
-> npm start
+> docker-compose up
 
 
 ## Requisição ao BackEnd
@@ -54,4 +57,4 @@ Foi usado para desenvolvimento a ferramenta **Postman**
 
 # FrontEnd
 
-Foi criado uma branch Frontend que contempla uma tela basica des pesquisa mostrando a resposta tirando a necessidade do postman.
+Foi criado uma branch Frontend que contempla uma tela basica de pesquisa mostrando a resposta tirando a necessidade do postman.
