@@ -1,0 +1,23 @@
+extends base
+
+append body
+
+    .container
+        .content
+            .bgCaixa
+                .warper
+                    h2 Busca no Mercado Livre
+                    form.caixaDePesquisa
+                        .form-grupo
+                            label(for="search") Search
+                            input.form-control( name="search" type="text" id="search" aria-describedby="search" placeholder="Coloque o valor a ser pesquisado")
+                        .form-grupo
+                            label(for="limit") Search
+                            input.form-control( name="limit" type="text" id="limit" aria-describedby="limit" placeholder="Coloque limite de itens a serem retornados")
+                    .areaBnt
+                        button.btn.btn-primary.clear(id="clear") Apagar
+                        button.btn.btn-primary(id="send") Enviar
+                .responseBox
+                    .spinner-border.text-primary.centralizar(id="loading",role="status", style="display: none;")
+                        span.sr-only Loading...
+                    pre#responseArea

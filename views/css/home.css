@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(135deg, rgba(27,25,62,1) 0%, rgba(52,47,140,1) 46%, rgba(45,108,121,1) 100%);
+}
+h2{
+    color: rgba(27,25,62,1);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 97vh;
+    align-items: center;
+}
+.warper{
+    width: 49%;
+    margin-right: 2%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+.bgCaixa{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+}
+.caixaDePesquisa{
+    width: 100%;
+}
+.areaBnt {
+    display: flex;
+    justify-content: flex-end;
+}
+.responseBox {
+    border: 1px solid #ced4da;
+    height: 50vh;
+    margin-top: 20px;
+    position: relative;
+    width: 49%;
+}
+#responseArea{
+    display: flex;
+    font-size: 87.5%;
+    color: #212529;
+    width: 100%;
+    overflow: auto;
+    height: 50vh;
+}
+.carregando {
+    background-color: #c2c0c096;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.areaBnt button{
+    background-color: #fff159;
+    border-color: #a79e3c;
+    color: black;
+    outline: none;
+}
+.areaBnt button:hover, .areaBnt button:active{
+    background-color: #a79e3c;
+    border-color: #fff159;
+    color: black;
+}
+.areaBnt button:focus{
+    outline: none;
+}
+.clear{
+    background-color: #007bff!important;
+    border-color: #007bff!important;
+    margin-right: 10px;
+    color: white!important;
+}
+.clear:hover,.clear:active{
+    background-color: #007bff!important;
+    border-color: #007bff!important;
+    color: white!important;
+
+}
+
+.centralizar{
+    display:none;
+    position: absolute;
+    left: 46%;
+    top: 40%;
+}
+@media (max-width: 768px) 
+{
+  .bgCaixa{
+    flex-direction: column;
+   }
+   .warper{
+       width: 100%;
+    }
+    .responseBox {
+        width: 100%;
+    }
+
+}
