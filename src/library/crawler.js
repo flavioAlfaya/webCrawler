@@ -5,6 +5,8 @@ const {URL} = require('../config/configs');
 const perPage = 50;
 
 const getItens =  async(search,limit) => {
+    console.log(URL)
+
     let lista = []
     let produtos = await requisicao(search,limit,0)
     if(!produtos.messsage){

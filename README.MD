@@ -18,12 +18,7 @@ Basta Rodar:
 
 ## Configurar as variaveis de ambiente
 
-Renomeie o arquivo **.env.exemple** para apenas **.env**
-
-|variavel de ambiente| valor |
-|--|--|
-| PORT | porta para a conexão com o backend  |
-| URL| Url da consulta na integra (http://lista.mercadolivre.com.br/)  |
+As variaveis se encontram do docker-compose na área de **environment**
 
 ## Rodar o backEnd
 
